@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Карточка товара</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="img/icons/hamburger.png" alt="">
+      </a>
+        <nav class="nav" id="nav">          
+          <div class="nav-wrap">
+              <div class="nav-logo">
+                  <a href="/"><img class="nav-logo__image" src="img/logo.png" alt=""></a>
+              </div>
+              <div class="nav-swith">     
+                <input type="checkbox" id="payt2"/>
+                <label for="payt2">RU</label>               
+              </div>
+              <div class="nav-search">
+                  <form action="" class="nav-search__form">
+                      <button type="submit" class="nav-search__button"></button>
+                      <input class="nav-search__input" type="text" placeholder="Поиск">                    
+                  </form>
+              </div>
+              <div class="nav-list">
+                  <ul class="nav-menu">
+                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Компания</a>
+                        <!--<ul class="submenu">
+                          <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 1.1</a></li>
+                          <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 1.2</a></li>
+                        </ul>-->
+                      </li>
+                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Продукция</a>
+                        <!--<ul class="submenu">
+                          <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.1 многа букаф</a></li>
+                          <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2</a>
+                            <ul class="submenu submenu_sub">
+                              <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2.1</a></li>
+                              <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2.2</a></li>
+                            </ul>-->
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Сотрудничество</a></li>
+                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Консультации</a></li>
+                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Контакты</a></li>
+                  </ul>
+              </div>
+              <ul class="nav-contacts">
+                  <li class="nav-contacts__item nav-contacts__item_phone"><a class="nav-contacts-link" href="tel:+375152688000">375 (152) 688-000</a></li>
+                  <li class="nav-contacts__item nav-contacts__item_mobile"><a class="nav-contacts-link" href="tel:+375293688000">+ 375 (29) 3-688-000</a></li>
+                  <li class="nav-contacts__item nav-contacts__item_email"><a class="nav-contacts-link" href="mailto:export@biokom.by">export@biokom.by</a></li>    
+              </ul>
+          </div>
+        </nav>
+        <main class="main-content">
+            <header class="header">
+                <h1 class="header__title">Акватоник</h1>
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__link" href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a class="breadcrumb-item__link" href="#">Продукция</a></li> 
+                    <li class="breadcrumb-item breadcrumb-item_active">Акватоник</li>
+                </ul>
+            </header>
+            <section class="product-card-wrap">
+              <div class="product-card-wrap__slider">
+                <div id="slider" class="flexslider">
+                  <ul class="slides">
+                    <li>
+                      <img src="img/1.jpg" />
+                    </li>
+                    <li>
+                      <img src="img/2.jpg" />
+                    </li>
+                    <li>
+                      <img src="img/3.jpg" />
+                    </li>
+                  </ul>
+                </div>
+                <div id="carousel" class="flexslider">
+                  <ul class="slides">
+                    <li class="carousel-images">
+                      <img class="carousel-pic" src="img/1.jpg" />
+                    </li>
+                    <li class="carousel-images">
+                      <img class="carousel-pic" src="img/2.jpg" />
+                    </li>
+                    <li class="carousel-images">
+                      <img class="carousel-pic" src="img/3.jpg" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-card-wrap__description">
+                <div class="card-description">
+                  <p>Представляет собой комплекс солей, эффективно стабилизирующих водно-электролитный баланс, а также нормализующих кислотно-основное равновесие. Входящие в состав моносахариды восполняют дефицит энергии.</p>
+                </div>
+                <div class="card-icons">
+                  <ul class="card-icons__list">
+                    <li class="card-icon">
+                      <img class="card-icon__pic" src="img/icons/19.png" alt="">
+                    </li>
+                    <li class="card-icon">
+                      <img class="card-icon__pic" src="img/icons/2.png" alt="">
+                    </li>
+                    <li class="card-icon">
+                      <img class="card-icon__pic" src="img/icons/1.png" alt="">
+                    </li>
+                  </ul>
+                </div>
+                <div class="product-card-wrap__button">
+                  <a href="#popup" class="btn popup-btn">Получить консультацию</a>
+                </div>
+              </div>
+            </section>
+            <section class="product-card-tabs">
+              <div class="tabs">
+                <ul class="tabs__caption">
+                  <li class="tabs-item active">Состав</li>
+                  <li class="tabs-item">Применение</li>
+                  <li class="tabs-item">Упаковка</li>
+                  <li class="tabs-item">Хранение и сроки годности</li>
+                  <li class="tabs-item">Производитель</li>
+                </ul>              
+                <div class="tabs__content  active">
+                  <p>1. Регидрационная эффективность <span class="span-green">АкваТоник</span> обусловлена компонентами, входящими в ее состав, которые регулируют функции сердечно-сосудистой, нервной и выделительной систем.</p>
+                    <p>Катионы натрия и ионы калия обуславливают объем и осмотическое давление внеклеточной жидкости, предотвращают парезы и параличи, стабилизируют сердечную деятельность, нормализуют кислотно-основное равновесие крови, активность некоторых ферментов.</p>                      
+                    <p> Аминоуксусная кислота улучшает метаболические процессы, оказывает седативное действие, обладает антиоксидантным и антитоксическим действием, ускоряет регенерацию ворсинок кишечника.</p>
+                </div>              
+                <div class="tabs__content">
+                  <p>2. Регидрационная эффективность <span class="span-green">АкваТоник</span> обусловлена компонентами, входящими в ее состав, которые регулируют функции сердечно-сосудистой, нервной и выделительной систем.</p>
+                    <p>Катионы натрия и ионы калия обуславливают объем и осмотическое давление внеклеточной жидкости, предотвращают парезы и параличи, стабилизируют сердечную деятельность, нормализуют кислотно-основное равновесие крови, активность некоторых ферментов.</p>                      
+                    <p> Аминоуксусная кислота улучшает метаболические процессы, оказывает седативное действие, обладает антиоксидантным и антитоксическим действием, ускоряет регенерацию ворсинок кишечника.</p>
+                </div>              
+                <div class="tabs__content">
+                  <p>3. Регидрационная эффективность <span class="span-green">АкваТоник</span> обусловлена компонентами, входящими в ее состав, которые регулируют функции сердечно-сосудистой, нервной и выделительной систем.</p>
+                  <p>Катионы натрия и ионы калия обуславливают объем и осмотическое давление внеклеточной жидкости, предотвращают парезы и параличи, стабилизируют сердечную деятельность, нормализуют кислотно-основное равновесие крови, активность некоторых ферментов.</p>                      
+                  <p> Аминоуксусная кислота улучшает метаболические процессы, оказывает седативное действие, обладает антиоксидантным и антитоксическим действием, ускоряет регенерацию ворсинок кишечника.</p>
+                  <p> Аминоуксусная кислота улучшает метаболические процессы, оказывает седативное действие, обладает антиоксидантным и антитоксическим действием, ускоряет регенерацию ворсинок кишечника.</p>
+                  <p> Аминоуксусная кислота улучшает метаболические процессы, оказывает седативное действие, обладает антиоксидантным и антитоксическим действием, ускоряет регенерацию ворсинок кишечника.</p>
+                </div>              
+                <div class="tabs__content">
+                  <p>4. Регидрационная эффективность <span class="span-green">АкваТоник</span> обусловлена компонентами, входящими в ее состав, которые регулируют функции сердечно-сосудистой, нервной и выделительной систем.</p>
+                  <p>Катионы натрия и ионы калия обуславливают объем и осмотическое давление внеклеточной жидкости, предотвращают парезы и параличи, стабилизируют сердечную деятельность, нормализуют кислотно-основное равновесие крови, активность некоторых ферментов.</p>                      
+                  <p> Аминоуксусная кислота улучшает метаболические процессы, оказывает седативное действие, обладает антиоксидантным и антитоксическим действием, ускоряет регенерацию ворсинок кишечника.</p>
+                </div>
+                <div class="tabs__content">
+                  <p>5. Регидрационная эффективность <span class="span-green">АкваТоник</span> обусловлена компонентами, входящими в ее состав, которые регулируют функции сердечно-сосудистой, нервной и выделительной систем.</p>
+                  <p>Катионы натрия и ионы калия обуславливают объем и осмотическое давление внеклеточной жидкости, предотвращают парезы и параличи, стабилизируют сердечную деятельность, нормализуют кислотно-основное равновесие крови, активность некоторых ферментов.</p>                      
+                  <p> Аминоуксусная кислота улучшает метаболические процессы, оказывает седативное действие, обладает антиоксидантным и антитоксическим действием, ускоряет регенерацию ворсинок кишечника.</p>
+                </div>              
+              </div>
+            </section>
+            <section class="product-card-advantages">
+              <div class="advantages">
+                <div class="advantages-text">
+                  <h2 class="all-title all-title_advantage-head">
+                    Преимущества
+                  </h2>
+                  <p class="advantages-text__paragraph">Представляет собой комплекс солей, эффективно стабилизирующих водно-электролитный баланс, а также нормализующих кислотно-основное равновесие. Входящие в состав моносахариды восполняют дефицит энергии.</p>
+                </div>
+                <div class="advantages-image">
+                  <img class="advantages-image__pic" src="img/1.jpg" alt="">
+                </div>
+              </div>
+            </section>
+            <section class="product-card-info">
+              <div class="card-info">
+                <h2 class="all-title all-title_card-info-head">
+                  Дополнительная информация о продукте
+                </h2>
+                <div class="card-info__text">
+                  <p class="card-info-paragraph"><span class="span-green">АкваТоник</span> применяется при потере жидкости и солей, вызванной острой или хронической диареей в качестве регидратационного средства.</p>
+                  <p class="card-info-paragraph">Перед использованием содержимое пакета "Базовый комплекс" смешивают с содержимым пакета "Энергетический комплекс" в сухих, чистых емкостях. Смесь может храниться в плотно закрывающихся емкостях <span class="span-green">не более 1 месяца</span> в сухом, прохладном, защищенном от солнца месте.</p>
+                  <p class="card-info-paragraph">АкваТоник применяют на протяжении всего периода диареи, в первый день готовят раствор из расчета <span class="span-green">50 г смеси на 1 литр</span> кипяченой воды, во 2-ой и последующий дни <span class="span-green">25 г на литр воды.</span> Телятам выпаивают по <span class="span-green">2-4 литра в сутки или 10% от массы тела.</span>  Поросятам обеспечивают свободный доступ к поилке с раствором в течение суток. Изготовленный раствор хранят <span class="span-green">не более 24 часов</span> при комнатной температуре.</p>
+                  <p>В рекомендуемых дозах данная добавка не имеет побочных действий и не вызывает осложнений, совместима с другими лекарственными средствами в комплексной терапии.</p>
+                </div>
+              </div>
+            </section>
+            <section class="product-card-recommend">
+              <h2 class="product-card-recommend__title">Рекомендуемые товары</h2>
+              <div class="recommend">
+                <div class="recommend-block">
+                  <div class="recommend-block__image">
+                    <img src="img/5.jpg" alt="">
+                  </div>
+                  <div class="recommend-block__text">
+                    <h3 class="recommend-block-title">Максус G 100</h3>
+                    <p class="recommend-block-paragraph">
+                      Применяют с лечебной и лечебно-профилактической целью при бактериальных энтеритах бройлеров и ремонтного молодняка кур-несушек, вызываемых Clostridium perfringens (клостридиозные энтериты,...
+                    </p>
+                    <a href="" class="btn recommend-block-button">Посмотреть</a>
+                  </div>
+                </div>
+                <div class="recommend-block">
+                  <div class="recommend-block__image">
+                    <img src="img/6.jpg" alt="">
+                  </div>
+                  <div class="recommend-block__text">
+                    <h3 class="recommend-block-title">Адамант</h3>
+                    <p class="recommend-block-paragraph">
+                      Адамант - гигиеническое средство используется в качестве осушителя подстилки в местах содержания животных и птицы
+                    </p>
+                    <a href="" class="btn recommend-block-button">Посмотреть</a>
+                  </div>
+                </div>
+                <div class="recommend-block">
+                  <div class="recommend-block__image">
+                    <img src="img/7.jpg" alt="">
+                  </div>
+                  <div class="recommend-block__text">
+                    <h3 class="recommend-block-title">Ультралин</h3>
+                    <p class="recommend-block-paragraph">
+                      Добавка кормовая для свиней в критические производственные периоды.
+                    </p>
+                    <a href="" class="btn recommend-block-button">Посмотреть</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <footer class="footer">
+              <div class="footer-wrap">
+                <div class="footer-wrap__address">
+                  <img src="img/icons/23.png" alt="" class="address-pic">
+                  <p class="address-text">Республика Беларусь <br>
+                    г. Гродно, ул. Аульская 39</p>
+                </div>
+                <div class="footer-wrap__nav">
+                  <h4 class="footer-menu-title">Компания</h4>
+                  <ul class="footer-menu-list">
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Профиль</a>
+                    </li>
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Структура</a>
+                    </li>
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Качество</a>
+                    </li>
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Вакансии</a>
+                    </li>
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Новости</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-wrap__menu">
+                  <h4 class="footer-menu-title">Продукция</h4>
+                  <ul class="footer-menu-list">
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Крупный рогатый скот</a>
+                    </li>
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Свиноводство</a>
+                    </li>
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Птицеводство</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-wrap__menu">
+                  <h4 class="footer-menu-title">Сотрудничество</h4>
+                  <ul class="footer-menu-list">
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Поставщикам</a>
+                    </li>
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Потребителям</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="footer-wrap__menu">
+                  <h4 class="footer-menu-title">Консультирование</h4>
+                  <ul class="footer-menu-list">
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Консультанты</a>
+                    </li>
+                    <li class="footer-menu-list__item">
+                      <a href="" class="footer-menu-link">Статьи о продукции</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="footer-bottom__date"> © 
+                  <script type="text/javascript">
+                    var d = new Date();
+                    document.write(d.getFullYear());
+                    </script> 
+                    ООО "Биоком"
+                </div>
+                <div class="footer-bottom__social">
+                  <ul class="footer-social-list">
+                    <li class="footer-social-list__item">
+                      <a href="" class="footer-social-link">
+                        <img src="img/icons/12.png" alt="">
+                      </a>
+                    </li>
+                    <li class="footer-social-list__item">
+                      <a href="" class="footer-social-link">
+                        <img src="img/icons/13.png" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </footer>
+        </main>
+    </div>
+
+    <!--<div id="popup" class="overlay">
+      <div class="popup">
+        <h2 class="popup__title">Получить консультацию</h2>
+        <a class="popup__close" href="#">&times;</a>
+        <div class="popup__content">
+          Thank to pop me out of that button, but now i'm done so you can close this window.
+        </div>
+      </div>
+    </div>-->    
+</body>
+</html>
