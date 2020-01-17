@@ -34,11 +34,24 @@ $(window).load(function() {
     });
 })(jQuery);
 
-function myFunction() {
-  var x = document.getElementById("nav");
-  if (x.className === "nav") {
-      x.className += " responsive";
-  } else {
-      x.className = "nav";
-  }
-}
+$(document).ready(function() {
+	
+	$("#open-menu").on("click", function() {
+		var target = $(this).attr("data-target");
+		if($(target).hasClass("open")) {
+			$(target).removeClass("open");
+		} else {
+			$(target).addClass("open");
+		}		
+	})
+
+	$(window).on("load resize", windowSize);
+
+	function windowSize() {
+		if ($(window).width() > "768") {
+			var menu = $("#open_menu").attr("data-target");
+			$(menu).removeClass("open");
+		}
+	}
+
+});

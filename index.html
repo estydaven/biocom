@@ -14,53 +14,57 @@
 </head>
 <body>
     <div class="wrapper">
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <img src="img/icons/hamburger.png" alt="">
-      </a>
+      <button class="btn-menu" id="open-menu" data-target="#collapse-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
         <nav class="nav" id="nav">          
           <div class="nav-wrap">
               <div class="nav-logo">
                   <a href="/"><img class="nav-logo__image" src="img/logo.png" alt=""></a>
               </div>
-              <div class="nav-swith">     
-                <input type="checkbox" id="payt2"/>
-                <label for="payt2">RU</label>               
+              <div class="mobile-collapse" id="collapse-menu">
+                <div class="nav-swith">     
+                  <input type="checkbox" id="payt2"/>
+                  <label for="payt2">RU</label>               
+                </div>
+                <div class="nav-search">
+                    <form action="" class="nav-search__form">
+                        <button type="submit" class="nav-search__button"></button>
+                        <input class="nav-search__input" type="text" placeholder="Поиск">                    
+                    </form>
+                </div>
+                <div class="nav-list">
+                    <ul class="nav-menu">
+                        <li class="nav-menu__item"><a class="nav-menu-link" href="#">Компания</a>
+                          <!--<ul class="submenu">
+                            <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 1.1</a></li>
+                            <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 1.2</a></li>
+                          </ul>-->
+                        </li>
+                        <li class="nav-menu__item"><a class="nav-menu-link" href="#">Продукция</a>
+                          <!--<ul class="submenu">
+                            <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.1 многа букаф</a></li>
+                            <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2</a>
+                              <ul class="submenu submenu_sub">
+                                <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2.1</a></li>
+                                <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2.2</a></li>
+                              </ul>-->
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="nav-menu__item"><a class="nav-menu-link" href="#">Сотрудничество</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu-link" href="#">Консультации</a></li>
+                        <li class="nav-menu__item"><a class="nav-menu-link" href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <ul class="nav-contacts">
+                    <li class="nav-contacts__item nav-contacts__item_phone"><a class="nav-contacts-link" href="tel:+375152688000">375 (152) 688-000</a></li>
+                    <li class="nav-contacts__item nav-contacts__item_mobile"><a class="nav-contacts-link" href="tel:+375293688000">+ 375 (29) 3-688-000</a></li>
+                    <li class="nav-contacts__item nav-contacts__item_email"><a class="nav-contacts-link" href="mailto:export@biokom.by">export@biokom.by</a></li>    
+                </ul>
               </div>
-              <div class="nav-search">
-                  <form action="" class="nav-search__form">
-                      <button type="submit" class="nav-search__button"></button>
-                      <input class="nav-search__input" type="text" placeholder="Поиск">                    
-                  </form>
-              </div>
-              <div class="nav-list">
-                  <ul class="nav-menu">
-                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Компания</a>
-                        <!--<ul class="submenu">
-                          <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 1.1</a></li>
-                          <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 1.2</a></li>
-                        </ul>-->
-                      </li>
-                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Продукция</a>
-                        <!--<ul class="submenu">
-                          <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.1 многа букаф</a></li>
-                          <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2</a>
-                            <ul class="submenu submenu_sub">
-                              <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2.1</a></li>
-                              <li class="nav-menu__item"><a class="nav-menu-link" href="#">пункт 2.2.2</a></li>
-                            </ul>-->
-                          </li>
-                        </ul>
-                      </li>
-                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Сотрудничество</a></li>
-                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Консультации</a></li>
-                      <li class="nav-menu__item"><a class="nav-menu-link" href="#">Контакты</a></li>
-                  </ul>
-              </div>
-              <ul class="nav-contacts">
-                  <li class="nav-contacts__item nav-contacts__item_phone"><a class="nav-contacts-link" href="tel:+375152688000">375 (152) 688-000</a></li>
-                  <li class="nav-contacts__item nav-contacts__item_mobile"><a class="nav-contacts-link" href="tel:+375293688000">+ 375 (29) 3-688-000</a></li>
-                  <li class="nav-contacts__item nav-contacts__item_email"><a class="nav-contacts-link" href="mailto:export@biokom.by">export@biokom.by</a></li>    
-              </ul>
           </div>
         </nav>
         <main class="main-content">

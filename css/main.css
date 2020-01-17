@@ -174,8 +174,29 @@ body {
   background: #fff;
   top: 42px;
 }
-.icon {
+.btn-menu {
   display: none;
+  height: 30px;
+  padding: 0 5px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  cursor: pointer;
+}
+.btn-menu span {
+  background-color: #333333;
+  width: 20px;
+  height: 2px;
+  display: block;
+}
+.btn-menu span + span {
+  margin-top: 4px;
+}
+.mobile-collapse.open {
+  display: block;
 }
 /* All document styles end */
 
@@ -777,6 +798,12 @@ body {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px){
+  .btn-menu {
+    display: block;
+    z-index: 9999;
+    position: fixed;
+    top: 27px;
+  }
   section{
     padding: 0 10px;
   }
@@ -806,27 +833,43 @@ body {
   text-align: center;
 }
   .nav{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+    padding: 0 10px 0 0;
+  }
+  .nav-wrap{
+    padding-top: 25px;
+  }
+  .nav-logo {
+    margin-bottom: 21px;
+}
+[for="payt2"]{
+  margin: 0 auto;
+}
+.nav-swith {
+  margin-bottom: 25px;
+}
+.nav-search {
+  margin-bottom: 25px;
+}
+.nav-list {
+  margin-bottom: 20px;
+}
+.nav-contacts{
+  margin: 0 auto;
+  width: 75%;
+  padding-bottom: 10px;
+}
+  .mobile-collapse{
     display: none;
-    width: 70%;  
-  }
-  .icon {
-    display: block;
-    position: absolute;
-    left: 10px;
-    width: 30px;
-    height: 30px;
-    z-index: 9999;
-  }
-  .responsive {
-    position: absolute;
-    display: block;
-    z-index: 9998;
-    background-color: #fff;
-    transition: 3s linear;
   }
   .main-content {
     width: 100%;
     padding: 0;
+    margin-top: 65px;
   }
   .recommend{
     -webkit-box-pack: center;
